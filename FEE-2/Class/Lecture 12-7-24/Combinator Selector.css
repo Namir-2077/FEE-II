@@ -1,0 +1,29 @@
+/* Decendant Combinator Selector */
+
+body {
+    background-color: black;
+}
+
+h1 {
+    color: white;
+}
+
+h3 {
+    color: white;
+}
+
+ul li a {
+    color: green;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+p1 {
+    color: red;
+    font-size: 25px;
+}
+
+p2 {
+    color: darkgray;
+    font-size: 25px;
+}
