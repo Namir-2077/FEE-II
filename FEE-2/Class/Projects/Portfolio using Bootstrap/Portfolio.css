@@ -1,0 +1,143 @@
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #111;
+    color: #f4f4f4;
+  }
+  
+  /* Header */
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  
+  .nav-link {
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #f39c12;
+  }
+  
+  /* Section Styles */
+  .section {
+    padding: 80px 0;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+  }
+  
+  .section:nth-child(even) {
+    background-color: #222;
+  }
+  
+  .section:nth-child(odd) {
+    background-color: #333;
+  }
+  
+  /* About Section */
+  #about h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  #about p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+  }
+  
+  /* Image */
+  .img-fluid {
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Animations */
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes zoomIn {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.1);
+    }
+  }
+  
+  @keyframes scrollUp {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Portfolio Hover Effect */
+  .portfolio-item img {
+    transition: transform 0.5s ease;
+  }
+  
+  .portfolio-item:hover img {
+    animation: zoomIn 0.5s forwards;
+  }
+  
+  /* Credits Scrolling Effect */
+  .credits {
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    background-color: #000;
+    color: #f4f4f4;
+  }
+  
+  .credits-text {
+    position: absolute;
+    bottom: -100%;
+    animation: scrollUp 10s linear infinite;
+  }
+  
+  /* Footer */
+  footer {
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: #000;
+    color: #f4f4f4;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .navbar-nav {
+      text-align: center;
+    }
+    
+    .section {
+      padding: 50px 0;
+    }
+  
+    #about h2 {
+      font-size: 2rem;
+    }
+  
+    #about p {
+      font-size: 1rem;
+    }
+  }
+  
